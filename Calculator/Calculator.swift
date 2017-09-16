@@ -16,33 +16,33 @@ struct Calculator {
         
     }
     
-    func add(_ num1: Int, _ num2: Int) -> Int {
+    func add(_ number1: Int, _ number2: Int) -> Int {
         
-        return num1 + num2
-        
-    }
-    
-    func minus(_ num1: Int, _ num2: Int) -> Int {
-        
-        return num1 - num2
+        return number1 + number2
         
     }
     
-    func multiply(_ num1: Int, _ num2: Int) -> Int {
+    func minus(_ number1: Int, _ number2: Int) -> Int {
         
-        return num1 * num2
+        return number1 - number2
         
     }
     
-    func divide(_ num1: Int, _ num2: Int) throws -> Int {
+    func multiply(_ number1: Int, _ number2: Int) -> Int {
         
-        if num2 == 0 {
+        return number1 * number2
+        
+    }
+    
+    func divide(_ number1: Int, _ number2: Int) throws -> Int {
+        
+        if number2 == 0 {
             
             throw CalculateError.invalidOperation
             
         }
         
-        return num1 / num2
+        return number1 / number2
         
     }
     
